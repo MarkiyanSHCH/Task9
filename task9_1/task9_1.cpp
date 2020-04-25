@@ -37,5 +37,6 @@ int main() {
         arr[2].pop();
     }
 
+    delete[] arr;
     return 0;
 }
