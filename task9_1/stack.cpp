@@ -7,7 +7,7 @@ stack::stack() {
 
 // Деконструктор Класу
 stack::~stack() {
-    delete Head;
+    delAll();
 }
 
 // Функція Добалення Елементів В Стек
@@ -59,3 +59,9 @@ int& stack::value() {
     return current->data;
 }
 
+void stack::delAll()
+{
+    // Пока остаются элементы, удаляем по одному с головы
+    while (size != 0)
+        pop();
+}

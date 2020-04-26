@@ -31,5 +31,6 @@ public:
     void pop();
     int len();
     int& value();
+    void delAll();
 
 };
