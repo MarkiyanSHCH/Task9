@@ -1,3 +1,4 @@
+#pragma once
 #include "stack.h"
 
 void put(int from, int to, stack* mas);
