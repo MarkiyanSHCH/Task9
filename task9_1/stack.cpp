@@ -31,17 +31,18 @@ void stack::push_back(int data) {
 
 void stack::pop() {
     node* current = this->Head;
-    // Цикл Який Знаходить Передостанній Node Щоб Видалити В Ньому Посилання На Останній
-    for (int i = 1; i < size - 1; i++) {
-        current = current->next;
-    }
 
     // Якщо Стек Складається Тільки З Одного Елемента Просто Очищаємо Весь Head
     if (size == 1) {
         Head = nullptr;
     }
-
-    current->next = nullptr;
+    else {
+        // Цикл Який Знаходить Передостанній Node Щоб Видалити В Ньому Посилання На Останній
+        for (int i = 1; i < size - 1; i++) {
+            current = current->next;
+        }
+        current->next = nullptr;
+    }
     --size;
 }
 
