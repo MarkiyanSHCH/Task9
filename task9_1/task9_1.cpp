@@ -4,16 +4,6 @@ int main() {
     // Створюємо Динамічний Масив Стеків
     stack* arr = new stack[3];
 
-    // Створюєм Стеки
-    stack main;
-    stack tmp;
-    stack last;
-
-    // Заповнюєм Масив
-    arr[0] = main;
-    arr[1] = tmp;
-    arr[2] = last;
-
     int n;
 
     cout << "Enter Size Stack : ";
